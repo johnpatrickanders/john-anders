@@ -1,2 +1,2 @@
-# jpanders
-My Github Page
+# John Anders
+Portfolio Website
