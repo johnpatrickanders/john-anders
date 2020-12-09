@@ -11,6 +11,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -19,44 +21,55 @@
 
 	<!-- Header -->
 	<section id="header">
+		<img src='john.png' style="border-radius: 50%;" />
 		<header>
 			<h1>John Anders</h1>
-			<p>Software Engineer<br>React<br>JavaScript<br>Python</p>
+			<div style="margin:60px; text-align: left; margin-top: 10px;">After studying Religion & Philosophy and spending
+				several years
+				working in the
+				non-profit
+				sector,
+				I decided to
+				make a change to tech. I'm passionate about user interfaces and developing minimalistic, responsive software
+				your users will love.
+				<br /><br />
+
+				I'm also strongly compelled by improving my understanding and practice of healthy
+				team
+				environments, and I'm a lifelong devotee to refining how I lead and follow others.</div>
 		</header>
 		<footer>
-			<a href="#banner" class="button style2 scrolly-middle">See Skills</a>
+			<a href="#portfolio" class="button style2 scrolly-middle">Download Resumé</a>
 		</footer>
 	</section>
 
 	<!-- Banner -->
 	<section id="banner">
 		<header>
-			<h2>Experience Across the Stack</h2>
-			<p>React, Python, Node.js, Flask, Express, <br>
+			<h2>Technologies</h2>
+			<p style='font-weight: 400;'>React, Python, Node.js, Flask, Sequelize Express, <br>
 				Redux, Regex, Docker, SQL, Git, HTML5, CSS3, TDD</p>
 		</header>
-		<footer>
-			<a href="#first" class="button style2 scrolly">See Algorithm Project</a>
-		</footer>
 	</section>
 
-	<!-- Feature 1 -->
-	<article id="first" class="container box style1 right">
-		<a href="https://jpa-goalgo.herokuapp.com/" class="image fit" style="display: flex; justify-content: center;"><img
-				src="images/goAlgo2.png" alt="Sorting algorithm screenshot with bars" /></a>
+	<!-- Project 1 -->
+	<article id="first" class="container box style1 right" style="max-height: fit-content;">
+		<a href="https://jpa-goalgo.herokuapp.com/" style="height: auto; width: fit-content;"><img src="images/goalg2.png"
+				style="height: auto;" alt="Sorting algorithm screenshot with bars" class="image fit" /></a>
 		<div class="inner">
 			<header>
 				<h2>goAlgo:<br />
 					Sorting & Pathfinding</h2>
 			</header>
 			<p>A visualizer for Quick Sort, Selection Sort, Insertion Sort, Bubble Sort, Breadth First Search, Depth First
-				Search, and Dijkstra's Pathfinding Algorithm. <a href="https://jpa-goalgo.herokuapp.com/">View here!</a></p>
+				Search, and Dijkstra's Algorithm. <a href="https://jpa-goalgo.herokuapp.com/">View here!</a></p>
 		</div>
 	</article>
 
-	<!-- Feature 2 -->
+	<!-- Project 2 -->
 	<article class="container box style1 left">
-		<a href="#" class="image fit"><img src="images/bluejay.png" alt="" /></a>
+		<a href="https://aabluejay.herokuapp.com/" class="image"><img src="images/bluejay.png"
+				alt="Crypto trader login screen" /></a>
 		<div class="inner">
 			<header>
 				<h2>Bluejay:<br />
@@ -67,12 +80,43 @@
 			</p>
 		</div>
 	</article>
-	<footer style="display: flex; justify-content: center;">
+	<!-- Project 3 -->
+	<article class="container box style1 right">
+		<a href="https://heedly.herokuapp.com/login"><img src="images/heedly2.png" alt="My reads view" class="image left"
+				style="height: auto;" /></a>
+		<div class="inner">
+			<header>
+				<h2>Heedly:<br />
+					Browse News the Mindful Way</h2>
+			</header>
+			<p>A full stack Feedly-like web app where users can browse up to the minute news by search or source, mark
+				articles
+				as read, and reference their “reads.”
+				<a href="https://heedly.herokuapp.com/"><br />Live link.</a>
+			</p>
+		</div>
+	</article>
+	<!-- Project 4 -->
+	<article class="container box style1 left">
+		<a href="https://song-camp.herokuapp.com/sign-up" class="image featured"><img src="images/songcamp.png"
+				alt="Signup page for songcamp app" /></a>
+		<div class="inner">
+			<header>
+				<h2>Songcamp:<br />
+					Your Next Favorite Hit Awaits</h2>
+			</header>
+			<p>A full stack BandCamp clone where users can search and mark songs as read and hear a Spotify preview.
+				<a href="https://song-camp.herokuapp.com/sign-up/">View here!</a>
+			</p>
+		</div>
+	</article>
+
+	<!-- <footer style="display: flex; justify-content: center;">
 		<a href="#portfolio" class="button style1">See Entire Portfolio</a>
-	</footer>
+	</footer> -->
 
 	<!-- Portfolio -->
-	<article class="container box style2">
+	<!-- <article class="container box style2">
 		<header id="portfolio">
 			<h2>Portfolio</h2>
 			<p>View GitHub <a href="https://github.com/johnpatrickanders">here.</a><br /></p>
@@ -92,175 +136,7 @@
 							title="This was my first ever project. I hope you see I've learned a lot since then." />Songcamp</a></div>
 			</div>
 		</div>
-	</article>
-
-	<!-- Contact -->
-	<article class="container box style3">
-		<header>
-			<h2>Want to Connect?</h2>
-			<p>I'm always down to chat tech, podcasts, philosophy, and my experience at <br>App Academy's Full Stack program!
-			</p>
-		</header>
-		<form method="post" action="mailto:johnpatrickanders@yahoo.com">
-			<div class="row gtr-50">
-				<div class="col-12 col-12-mobile"><input type="text" class="text" name="email" placeholder="Your Email" /></div>
-				<div class="col-12">
-					<ul class="actions">
-						<li><input type="submit" value="Email John" /></li>
-					</ul>
-				</div>
-			</div>
-		</form>
-	</article>
-
-	<!-- Generic -->
-	<!--
-			<article class="container box style3">
-				<header>
-					<h2>Generic Box</h2>
-					<p>Just a generic box. Nothing to see here.</p>
-				</header>
-				<section>
-					<header>
-						<h3>Paragraph</h3>
-						<p>This is a subtitle</p>
-					</header>
-					<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-					habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-					leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-					amet risus elit.</p>
-				</section>
-				<section>
-					<header>
-						<h3>Blockquote</h3>
-					</header>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-					tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
-				</section>
-				<section>
-					<header>
-						<h3>Divider</h3>
-					</header>
-					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-					<hr />
-					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-				</section>
-				<section>
-					<header>
-						<h3>Unordered List</h3>
-					</header>
-					<ul>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-					</ul>
-				</section>
-				<section>
-					<header>
-						<h3>Ordered List</h3>
-					</header>
-					<ol>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-					</ol>
-				</section>
-				<section>
-					<header>
-						<h3>Table</h3>
-					</header>
-					<div class="table-wrapper">
-						<table>
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Name</th>
-									<th>Description</th>
-									<th>Price</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>45815</td>
-									<td>Something</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>24524</td>
-									<td>Nothing</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>19.99</td>
-								</tr>
-								<tr>
-									<td>45815</td>
-									<td>Something</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>29.99</td>
-								</tr>
-								<tr>
-									<td>24524</td>
-									<td>Nothing</td>
-									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-									<td>19.99</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td colspan="3"></td>
-									<td>100.00</td>
-								</tr>
-							</tfoot>
-						</table>
-					</div>
-				</section>
-				<section>
-					<header>
-						<h3>Form</h3>
-					</header>
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobile">
-								<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-							</div>
-							<div class="col-6 col-12-mobile">
-								<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-							</div>
-							<div class="col-12">
-								<select name="department" id="department">
-									<option value="">Choose a department</option>
-									<option value="1">Manufacturing</option>
-									<option value="2">Administration</option>
-									<option value="3">Support</option>
-								</select>
-							</div>
-							<div class="col-12">
-								<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Submit" /></li>
-									<li><input type="reset" class="style3" value="Clear Form" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</section>
-			</article>
-		-->
+	</article> -->
 
 	<section id="footer">
 		<ul class="icons">
