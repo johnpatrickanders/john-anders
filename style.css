@@ -1,0 +1,343 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 670px;
+  margin: 30px auto;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body i, body p, body li {
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 140%;
+  word-spacing: 10%;
+  letter-spacing: 150%;
+}
+body input, body input[type=text], body input[type=button], body input[type=submit] {
+  font-size: 8pt;
+}
+body form {
+  max-width: 100%;
+}
+body input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+body input[type=text] {
+  background-color: white;
+  width: 500px;
+  color: black;
+  padding: 4px 10px;
+  max-width: 100%;
+}
+body p.alert, body p.alert-red {
+  border: 1px solid #5EBD3E;
+  border-radius: 7px;
+  padding: 4px 10px;
+}
+body p.alert-red {
+  border: 1px solid #E23838;
+}
+body input[type=button], body input[type=submit], body input[type=reset] {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+  color: black;
+  padding: 4px 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+body i, body p {
+  margin: 10px auto;
+}
+body ul {
+  margin: 10px auto;
+}
+body a {
+  color: #009CDF;
+}
+body a.red {
+  color: #E23838;
+}
+body li {
+  line-height: 23px;
+  margin: 1px inherit;
+  padding: 0px;
+}
+body h1.name {
+  display: inline-block;
+}
+/* body div.social {
+  float: right;
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 10px;
+} */
+body div.social div {
+  display: inline-block;
+  padding-left: 20px;
+}
+body div.social a {
+  text-decoration: none;
+}
+body div.social img.social {
+  width: 30px;
+  vertical-align: top;
+}
+body div.social:last-child {
+  padding-right: 0px;
+}
+body div.block {
+  vertical-align: top;
+  padding: 2rem 0px;
+  padding-bottom: 0px;
+}
+body div.narrow-block {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+body div.wide-block {
+  margin: 0px;
+  width: 100%;
+}
+body h1 {
+  letter-spacing: 1px;
+  color: #5EBD3E;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 22pt;
+}
+body h1 a {
+  color: #5EBD3E;
+}
+body h2 {
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  color: #E23838;
+  font-size: 20px;
+}
+body h2 a {
+  color: #E23838;
+}
+body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+body h4 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+body div.purple h2 {
+  color: #973999;
+}
+body .aside {
+  margin-top: 10px;
+  border-left: 3px solid grey;
+  padding: 0px 0px 2px 10px;
+}
+body .aside * {
+  color: grey;
+}
+body .tag {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  border-radius: 7px;
+  margin: 0px;
+  margin-right: 10px;
+  padding: 0px 10px 2px 10px;
+  position: relative;
+  top: -1px;
+  text-decoration: none;
+}
+body img {
+  width: 100%;
+}
+body footer {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 8px;
+}
+body footer p {
+  color: grey;
+  font-size: 80%;
+}
+body .debug {
+  display: none;
+}
+body article.allow-tags h3, body article.allow-tags a.float-obj {
+  display: inline-block;
+}
+body article.allow-tags a.float-obj {
+  float: right;
+  margin-left: 20px;
+  text-decoration: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  bottom: -0.1em;
+}
+body article.allow-tags div.view-toggle {
+  margin-bottom: 1.5rem;
+}
+body article.allow-tags div.view-toggle:last-child {
+  margin-bottom: 0rem;
+}
+body article.allow-tags h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 950px) {
+  div.narrow-block {
+    max-width: 315px;
+  }
+}
+@media (max-width: 950px) {
+  body {
+    margin-top: 0px;
+  }
+  body div.non-block {
+    margin-bottom: 20px;
+  }
+  body div.block {
+    width: 100%;
+  }
+  body input {
+    max-width: 100%;
+  }
+
+  img.profile {
+    margin-top: 12px;
+  }
+
+  p.tag {
+    top: -3px;
+  }
+}
+@media (max-width: 520px) {
+  div.block, div.narrow-block {
+    max-width: 98%;
+  }
+
+  article.allow-tags a.float-obj {
+    width: 100%;
+    display: block;
+    margin: 0.4em 0em 1em 0em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+
+  body {
+    padding: 0px 16px;
+  }
+
+  h1 {
+    margin-top: 0px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  div.social {
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+  }
+  div.social div:nth-child(1) {
+    padding-left: 10px;
+  }
+  div.social img {
+    width: 10px;
+    vertical-align: top;
+    position: relative;
+    top: -25px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+  }
+  body * {
+    color: #FFFFFF;
+  }
+  body img.social.social-invert {
+    filter: brightness(0) invert(1);
+  }
+  body div.purple h2 {
+    color: #FFB900;
+  }
+  body .tag {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+  }
+}
+[data-theme=black] body {
+  background-color: #000000;
+}
+[data-theme=black] body * {
+  color: #FFFFFF;
+}
+[data-theme=black] body img.social.social-invert {
+  filter: brightness(0) invert(1);
+}
+[data-theme=black] body div.purple h2 {
+  color: #FFB900;
+}
+[data-theme=black] body .tag {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+[data-theme=dark] body {
+  background-color: #2A2A2B;
+}
+[data-theme=dark] body * {
+  color: #FFFFFF;
+}
+[data-theme=dark] body img.social.social-invert {
+  filter: brightness(0) invert(1);
+}
+[data-theme=dark] body div.purple h2 {
+  color: #FFB900;
+}
+[data-theme=dark] body p.tag {
+  border-color: #FFFFFF;
+}
+
+[data-theme=navy] body {
+  background-color: #001f3f;
+}
+[data-theme=navy] body * {
+  color: #7FDBFF;
+}
+[data-theme=navy] body img.social.social-invert {
+  filter: brightness(0) invert(0.75);
+}
+[data-theme=navy] body div.purple h2 {
+  color: #FFB900;
+}
+[data-theme=navy] body p.tag {
+  border-color: #7FDBFF;
+}
+
+/*# sourceMappingURL=main.css.map */
